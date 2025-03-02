@@ -1,0 +1,58 @@
+
+.social-links{
+    text-align: center;
+}
+
+
+
+.div-social-link-profile {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+
+.div-social-link-social-media-links{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.div-social-link-picture img{
+    border-radius: 50%;
+    height: 164px;
+    width: 164px;
+    object-fit: cover;
+}
+
+.social-links_button_flex{
+    display: flex;
+}
+
+.social-links_button{
+    background-color: #202020;
+    padding: 10px 20px; /* Padding inside the button */
+    font-size: 16px; /* Text size */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.social-links_button a{
+    color: #ebebeb;
+}
+
+.social-links_button-icon{
+    font-size:  3.25em;
+    padding-left: 14px;
+    padding-top: 18px;
+}
+
+.social-links_button__icon--facebook:before{
+
+}
+
+@media (width >= 900px) {
+
+}
