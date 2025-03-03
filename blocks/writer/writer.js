@@ -2,7 +2,7 @@ import { createSocialButtons } from '../social-links/social-links.js';
 import { loadCSS } from '../../scripts/aem.js';
 
 export default async function decorate(block) {
-  loadCSS(`${window.hlx.codeBasePath}/blocks/social_links/social_links.css`);
+  loadCSS(`${window.hlx.codeBasePath}/blocks/social-links/social-links.css`);
 
   // Get all direct children divs
   const children = [...block.children];
