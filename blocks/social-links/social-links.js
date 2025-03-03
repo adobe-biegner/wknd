@@ -1,5 +1,4 @@
 export function createSocialButtons(profileId, block) {
-
   // Create a new div for social media links
   const socialMediaDiv = document.createElement('div');
   socialMediaDiv.classList.add('div-social-link-social-media-links');
@@ -37,16 +36,11 @@ export function createSocialButtons(profileId, block) {
 }
 
 export default async function decorate(block) {
-
   // Extract name and format it as an ID
   let profileId = 'default-user';
   if (block.textContent.trim()) {
     profileId = block.textContent.trim().toLowerCase().replace(/\s+/g, '-');
   }
 
-  create_social_buttons(profileId, block);
-
+  createSocialButtons(profileId, block);
 }
-
-
-
