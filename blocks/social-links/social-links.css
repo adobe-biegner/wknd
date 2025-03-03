@@ -1,15 +1,15 @@
 
-.div-social-link-social-media-links{
+.div-social-links-social-media-links{
     display: flex;
     justify-content: center;
     gap: 20px;
 }
 
-.social-links_button_flex{
+.social-links-button-flex{
     display: flex;
 }
 
-.social-links_button{
+.social-links-button{
     background-color: #202020;
     padding: 10px 20px; /* Padding inside the button */
     font-size: 16px; /* Text size */
@@ -19,17 +19,17 @@
     transition: background-color 0.3s ease; /* Smooth transition */
 }
 
-.social-links_button a{
+.social-links-button a{
     color: #ebebeb;
 }
 
-.social-links_button-icon{
+.social-links-button-icon{
     font-size:  3.25em;
     padding-left: 14px;
     padding-top: 18px;
 }
 
-.social-links_button__icon--facebook:before{
+.social-links-button--icon--facebook::before{
 
 }
 

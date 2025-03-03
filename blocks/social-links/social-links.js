@@ -1,29 +1,29 @@
 export function createSocialButtons(profileId, block) {
   // Create a new div for social media links
   const socialMediaDiv = document.createElement('div');
-  socialMediaDiv.classList.add('div-social-link-social-media-links');
+  socialMediaDiv.classList.add('div-social-links-social-media-links');
 
   // Add the social media buttons HTML inside the new div
   socialMediaDiv.innerHTML = `
     <div>
-      <div class="social-links_button_flex">
-        <div class="social-links_button">
+      <div class="social-links-button-flex">
+        <div class="social-links-button">
           <a href="#facebook-${profileId}" aria-label="Facebook Social Media">
-            <span class="social-links_button__icon--facebook" aria-hidden="true">
+            <span class="social-links-button--icon--facebook" aria-hidden="true">
             Facebook
 </span>
           </a>
         </div>
-        <div class="social-links_button">
+        <div class="social-links-button">
           <a href="#twitter-${profileId}" aria-label="Twitter Social Media">
-            <span class="social-links_button__icon--twitter" aria-hidden="true">
+            <span class="social-links-button--icon--twitter" aria-hidden="true">
             Twitter
 </span>
           </a>
         </div>
-        <div class="social-links_button">
+        <div class="social-links-button">
           <a href="#instagram-${profileId}" aria-label="Instagram Social Media">
-            <span class="social-links_button__icon--instagram" aria-hidden="true">
+            <span class="social-links-button--icon--instagram" aria-hidden="true">
             Instagram
 </span>
           </a>

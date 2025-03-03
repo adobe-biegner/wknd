@@ -2,7 +2,7 @@ import { createSocialButtons } from '../social-links/social-links.js';
 import { loadCSS } from '../../scripts/aem.js';
 
 export default async function decorate(block) {
-  loadCSS(`${window.hlx.codeBasePath}/blocks/social-links/social-links.css`);
+  loadCSS(`${window.hlx.codeBasePath}/blocks/social_links/social_links.css`);
 
   // Get all direct children divs
   const children = [...block.children];
@@ -17,6 +17,5 @@ export default async function decorate(block) {
   if (children[1] && children[1].textContent.trim()) {
     profileId = children[1].textContent.trim().toLowerCase().replace(/\s+/g, '-');
   }
-
   createSocialButtons(profileId, block);
 }
