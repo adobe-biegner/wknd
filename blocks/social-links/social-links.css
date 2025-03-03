@@ -1,28 +1,8 @@
 
-.social-links{
-    text-align: center;
-}
-
-
-
-.div-social-link-profile {
-    text-transform: uppercase;
-    font-size: 14px;
-}
-
-
 .div-social-link-social-media-links{
     display: flex;
     justify-content: center;
     gap: 20px;
-}
-
-
-.div-social-link-picture img{
-    border-radius: 50%;
-    height: 164px;
-    width: 164px;
-    object-fit: cover;
 }
 
 .social-links_button_flex{
