@@ -1,8 +1,8 @@
-import { create_social_buttons } from '../social-links/social-links.js';
+import { createSocialButtons } from '../social-links/social-links.js';
 import { loadCSS } from '../../scripts/aem.js';
 
 
-export default function decorate(block) {
+export default async function decorate(block) {
 
   loadCSS(`${window.hlx.codeBasePath}/blocks/social-links/social-links.css`);
 
@@ -20,6 +20,6 @@ export default function decorate(block) {
     profileId = children[1].textContent.trim().toLowerCase().replace(/\s+/g, "-");
   }
 
-  create_social_buttons(profileId, block);
+  createSocialButtons(profileId, block);
 
 }

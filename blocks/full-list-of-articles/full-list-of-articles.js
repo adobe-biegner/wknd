@@ -1,16 +1,16 @@
 export default async function decorate(block) {
   try {
-    const response = await fetch('${window.location.origin}/query-index.json');
+    const response = await fetch(`${window.hlx.codeBasePath}/query-index.json`);
     if (!response.ok) throw new Error('Failed to fetch data');
 
     const data = await response.json();
-    const magazinePages = data.data.filter(page => page.path.startsWith('/us/en/magazine/'));
+    const magazinePages = data.data.filter((page) => page.path.startsWith('/us/en/magazine/'));
 
     const heading = document.createElement('h2');
     heading.textContent = 'All articles';
 
     const list = document.createElement('ul');
-    magazinePages.forEach(page => {
+    magazinePages.forEach((page) => {
       const listItem = document.createElement('li');
       const link = document.createElement('a');
 
